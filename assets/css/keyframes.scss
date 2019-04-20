@@ -1,0 +1,59 @@
+@keyframes pageOverlayAni {
+    0% {
+        height: 0;
+        background-color: var(--page-overlay-color);
+    }
+    50%{
+
+    }
+    99%{
+        height: 100%;
+        background-color: var(--page-overlay-color-out);
+        z-index: 98;
+    }
+    100%{
+      z-index: -1;
+    }
+}
+
+@keyframes ddf {
+  
+  0%{
+    width: 100%;
+    
+  }
+
+  50%{
+    width: 100%;
+    left: 0;
+    height: 378px;
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(1,0,1,1);
+    
+  }
+  100%{
+    width: 100%;
+    left: 0;
+    height: 110vh;
+    transform: translateY(-440px);
+    animation-timing-function: cubic-bezier(1,0,1,1);
+  }
+    
+}
+
+@keyframes caseOverlayAni {
+
+  0%{
+      transform: scale(1,1);
+      background-color: var(--secondary);
+      animation-timing-function: cubic-bezier(0,.8,1,1);
+  }
+  40%{
+      transform: scale(6,1);
+  }
+  100%{
+      transform: scale(6,10);
+      background-color: var(--secondary);
+  }
+    
+}

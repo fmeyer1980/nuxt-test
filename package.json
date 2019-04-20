@@ -1,0 +1,28 @@
+{
+  "name": "nuxty",
+  "version": "1.0.0",
+  "description": "My breathtaking Nuxt.js project",
+  "author": "fmeyer1980",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.4.1",
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.4.0",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-scroll-reveal": "^1.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

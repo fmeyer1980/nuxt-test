@@ -1,0 +1,71 @@
+.page{
+    overflow: hidden;
+}
+
+.page-leave-active {
+    transition-delay: .5s;
+
+    .page-overlay{
+        animation: pageOverlayAni .6s cubic-bezier(1,0,1,1) forwards;
+    }
+}
+
+.page-enter-active {
+    transition-delay: .5s;
+}
+
+.page-fade-leave-active {
+    transition-delay: 1s;
+}
+
+.page-overlay{
+    position: fixed;
+    width: 100%;
+    height: 0px;
+    background-color: var(--page-overlay-color);
+    z-index: 98;
+}
+
+.page.cases{
+    --page-overlay-color: var(--light-gray-dark);
+    --page-overlay-color-out: var(--light-gray-light);
+}
+  
+.page.cases-test, .test-color{
+  --primary: #BB63A1;
+  --primary-light: #CE7AB5;
+  --primary-dark: #A4568D;
+
+  --secondary: #382E35;
+  --secondary-light: #42383F;
+  --secondary-dark: #241B20;
+  --primary: #BB63A1;
+
+  --layout-color: var(--secondary);
+
+
+}
+  
+.page.cases-toftild, .toftild{
+    --primary: #C97921;
+    --primary-light: #CE7AB5;
+    --primary-dark: #A4568D;
+
+    --secondary: #373128;
+    --secondary-light: #373128;
+    --secondary-dark: #29241d;
+
+    --layout-color: var(--secondary);
+}
+
+.page.cases-limfjords-camping, .limfjords-camping{
+    --primary: #7E984B;
+    --primary-light: #CE7AB5;
+    --primary-dark: #A4568D;
+
+    --secondary: #2F322A;
+    --secondary-light: #1C2015;
+    --secondary-dark: #20221d;
+
+    --layout-color: var(--secondary);
+}
