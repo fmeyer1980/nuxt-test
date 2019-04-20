@@ -115,10 +115,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/css/global.scss';
-.highlight {
-  background: yellow;
-}
-
 
 [data-aos="case-animation"] {
 
@@ -134,7 +130,7 @@ export default {
 
 [data-aos="case-text-ani"] {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(80px);
     transition: .2s cubic-bezier(1,0,1,1);
         
     &.aos-animate {
@@ -243,7 +239,7 @@ export default {
 
             .image{
                 position: relative;
-                z-index: 1;
+                z-index: 2;
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
@@ -264,6 +260,7 @@ export default {
                 grid-column-start: 1;
                 transition: .3s cubic-bezier(1,0,1,1);
                 position: relative;
+                z-index: 1;
             }
         }
 
@@ -311,7 +308,7 @@ export default {
           .overlay{
             animation: caseOverlayAni 1s forwards;
             z-index: 98;
-            }
+        }
       }
 
     [data-aos="case-animation"] {

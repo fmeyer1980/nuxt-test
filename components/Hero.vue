@@ -1,18 +1,6 @@
 <template>
   <div class="hero">
       <div class="bg-image" :style="{backgroundImage: 'url(' + imagUrl + ')', opacity: opacity}"></div>
-
-
-<!-- <div class="bg-image" :style="{ backgroundImage: `url(${image})` }"></div> -->
-
-
-    <!-- <img :src="" alt=""> -->
-      
-      <!-- <img v-bind:src="path" alt=""> -->
-      <!-- <img v-bind:src="image.url" /> -->
-
-      <!-- <img :src="imagUrl" alt=""> -->
-      
         <div class="container container--right">
             <h1>
             <span class="heading">{{ title }}
@@ -172,7 +160,7 @@ export default {
                 content: "";
                 height: 0.8em;
                 width: 5px;
-                background-color: currentColor;
+                background-color: inherit;
                 position: absolute;
                 left: 0;
                 top: 0;

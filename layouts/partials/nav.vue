@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{ 'hidden-navbar': !showNavbar }">
       <div class="logo-wrapper">
         <nuxt-link class="logo" to="/"><img src="@/assets/images/logo.png" alt="" /></nuxt-link>
       </div>
@@ -20,9 +20,43 @@
 </template>
 
 <script>
+const OFFSET = 90
 
 export default {
+  
+  data () {
+    return {
+      showNavbar: true,
+      lastScrollPosition: 0,
+      scrollValue: 0
+    }
+  },
 
+  mounted () {
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.onScroll)
+    const viewportMeta = document.createElement('meta')
+    viewportMeta.name = 'viewport'
+    viewportMeta.content = 'width=device-width, initial-scale=1'
+    document.head.appendChild(viewportMeta)
+  },
+
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+
+  methods: {
+    onScroll () {
+      if (window.pageYOffset < 0) {
+        return
+      }
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+        return
+      }
+      this.showNavbar = window.pageYOffset < this.lastScrollPosition
+      this.lastScrollPosition = window.pageYOffset
+    }
+  }
 }
 </script>
 
@@ -39,6 +73,9 @@ header.dark{
 
 }
 
+.hidden-navbar{
+  opacity: 0;
+}
 
 [class*="cases-"]{
 
@@ -143,6 +180,12 @@ header{
   font-size: 0.9em;
   z-index: 101;
   color: var(--white);
+  opacity: 1;
+  transition: opacity .3s ease-in !important;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
 
 .logo-wrapper{
     background-color: #eee;
