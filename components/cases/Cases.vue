@@ -12,7 +12,7 @@
                 <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 1" :class="{active:selected == 1}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case1.webp" alt=""/>
+                            <img class="image" src="@/assets/images/case1.jpg" alt=""/>
                         </div>
                         <div class="overlay toftild"></div>   
                     </div>
@@ -26,7 +26,7 @@
                 
                     <div class="image-container" @click="selected = 2" :class="{active:selected == 2}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case2.webp" alt=""/>
+                            <img class="image" src="@/assets/images/case2.jpg" alt=""/>
                         </div>
                         <div class="overlay test-color"></div>   
                     </div>
@@ -39,7 +39,7 @@
                 <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 3" :class="{active:selected == 3}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case3.webp" alt=""/>
+                            <img class="image" src="@/assets/images/case3.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>
@@ -52,7 +52,7 @@
                 <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/limfjords-camping">
                     <div class="image-container" @click="selected = 4" :class="{active:selected == 4}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case3.webp" alt=""/>
+                            <img class="image" src="@/assets/images/case3.jpg" alt=""/>
                         </div>
                         <div class="overlay limfjords-camping"></div>   
                     </div>
@@ -65,7 +65,7 @@
                 <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 5" :class="{active:selected == 5}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case2.webp" alt=""/>
+                            <img class="image" src="@/assets/images/case2.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>
@@ -78,7 +78,7 @@
                 <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 6" :class="{active:selected == 6}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case1.webp" alt=""/>
+                            <img class="image" src="@/assets/images/case1.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>

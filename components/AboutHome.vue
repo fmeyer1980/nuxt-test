@@ -4,7 +4,7 @@
         <div class="container container--left">
         <div class="image-ani"></div>
             <div class="image-wrapper">
-                <img class="image" src="~assets/images/about-home.webp" alt="Flemming Meyer"/>
+                <img class="image" src="~assets/images/about-home.jpg" alt="Flemming Meyer"/>
                 <a class="contact-btn" href="">Kontakt mig for at høre nærmere <span></span></a>
             </div>
             <div class="content-ani-wrapper">
