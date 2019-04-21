@@ -9,20 +9,20 @@
         <div class="wrapper">
             <div class="container container--right">
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 1" :class="{active:selected == 1}">
                         <div class="img-wrapper">
                             <img class="image" src="@/assets/images/case1.jpg" alt=""/>
                         </div>
                         <div class="overlay toftild"></div>   
                     </div>
-                    <div class="content" data-aos="case-text-ani" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                    <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website & webshop</span>
                         <h3 class="heading h4">Toftild</h3>
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/test">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/test">
                 
                     <div class="image-container" @click="selected = 2" :class="{active:selected == 2}">
                         <div class="img-wrapper">
@@ -30,59 +30,59 @@
                         </div>
                         <div class="overlay test-color"></div>   
                     </div>
-                    <div class="content" data-aos="case-text-ani" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                    <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website</span>
                         <h3 class="heading h4">Beach tours</h3>
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 3" :class="{active:selected == 3}">
                         <div class="img-wrapper">
                             <img class="image" src="@/assets/images/case3.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>
-                    <div class="content" data-aos="case-text-ani" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                    <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Dashboard</span>
                         <h3 class="heading h4">LeadscoreApp</h3>
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/limfjords-camping">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/limfjords-camping">
                     <div class="image-container" @click="selected = 4" :class="{active:selected == 4}">
                         <div class="img-wrapper">
                             <img class="image" src="@/assets/images/case3.jpg" alt=""/>
                         </div>
                         <div class="overlay limfjords-camping"></div>   
                     </div>
-                    <div class="content" data-aos="case-text-ani" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                    <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website</span>
                         <h3 class="heading h4">Limfjords camping</h3>
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 5" :class="{active:selected == 5}">
                         <div class="img-wrapper">
                             <img class="image" src="@/assets/images/case2.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>
-                    <div class="content" data-aos="case-text-ani" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                    <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website & webshop</span>
                         <h3 class="heading h4">Sandbalance</h3>
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-anchor-placement="top-bottom" data-aos-once="true" to="/cases/toftild">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 6" :class="{active:selected == 6}">
                         <div class="img-wrapper">
                             <img class="image" src="@/assets/images/case1.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>
-                    <div class="content" data-aos="case-text-ani" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                    <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website</span>
                         <h3 class="heading h4">Online ski</h3>
                     </div>
@@ -117,10 +117,8 @@ export default {
 @import '~/assets/css/global.scss';
 
 [data-aos="case-animation"] {
-
   opacity: 0;
   transition-property: transform, opacity;
-
 
   &.aos-animate {
     opacity: 1;
@@ -130,12 +128,12 @@ export default {
 
 [data-aos="case-text-ani"] {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translate3d(30px,0,0);
     transition: .2s cubic-bezier(1,0,1,1);
         
     &.aos-animate {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translate3d(0px,0,0);
     }
 }
 
@@ -148,11 +146,9 @@ export default {
 .cases{
     background-color: $white;
 
-    
-
       .top{
-      background-color: $lightGrayLight;
-      padding: ($gutter * 5) 0 ($gutter * 4.5);
+        background-color: $lightGrayLight;
+        padding: ($gutter * 5) 0 ($gutter * 4.5);
 
       .heading{
           margin-top: 0;
@@ -245,9 +241,9 @@ export default {
                 height: 100%;
                 opacity: 0;
                 transition: opacity 0.1s ease-out;
-                transform: scale(1.075);
+                transform: scale3d(1.075,1.075,1);
                 transition: 0.2s ease-in-out;
-                line-height: 0;
+    
             }
 
             .overlay{
@@ -258,9 +254,7 @@ export default {
                 transition: max-height .3s cubic-bezier(1,0,1,1);
                 grid-row-start: 1;
                 grid-column-start: 1;
-                transition: .3s cubic-bezier(1,0,1,1);
                 position: relative;
-                z-index: 1;
             }
         }
 
@@ -305,8 +299,15 @@ export default {
       }
 
       .active{
+
+          .img-wrapper{
+
+            .image{
+                z-index: -1 !important;
+            }
+          }
           .overlay{
-            animation: caseOverlayAni 1s forwards;
+            animation: caseOverlayAni 1s ease forwards;
             z-index: 98;
         }
       }
@@ -318,7 +319,7 @@ export default {
 
                     .image{
                         opacity: 1;
-                        transform: scale(1);
+                        transform: scale3d(1,1,1);
                     }
 
                     .overlay{

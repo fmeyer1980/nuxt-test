@@ -46,7 +46,9 @@ export default {
     z-index: 1;
     height: 6rem;
     align-items: center;
-
+    animation: fadeInAni .3s ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: backwards; 
 
     &__box{
       position: relative;

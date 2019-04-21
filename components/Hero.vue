@@ -126,19 +126,6 @@ export default {
         z-index: 1;
     }
 
-    /* &:after{
-        content: "";
-        background-size: cover;
-        animation: heroBgAni 1s ease forwards;
-        animation-delay: 4s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-    } */
-
     h1{
         margin-top: 0;
         margin-bottom: 0.1em;
@@ -149,18 +136,19 @@ export default {
         .heading{
             animation: heroHeadingAni 1.4s forwards;
             animation-delay: .3s;
-            color: transparent;
+            animation-fill-mode: backwards;
             padding-left: 0.35em;
             font-weight: 300;
             overflow: hidden;
             display: inline-block;
             position: relative;
             line-height: 1.2em;
+
             &:after{
                 content: "";
                 height: 0.8em;
                 width: 5px;
-                background-color: inherit;
+                background-color: currentColor;
                 position: absolute;
                 left: 0;
                 top: 0;

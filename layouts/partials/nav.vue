@@ -1,5 +1,6 @@
 <template>
-  <header :class="{ 'hidden-navbar': !showNavbar }">
+  <header>
+    <div class="navbar" :class="{ 'hidden-navbar': !showNavbar }">
       <div class="logo-wrapper">
         <nuxt-link class="logo" to="/"><img src="@/assets/images/logo.png" alt="" /></nuxt-link>
       </div>
@@ -16,6 +17,8 @@
         <li><a href="">E: mail@konform.com</a></li>
         <li><a href="">T: 33 11 05 11</a></li>
       </div>
+    </div>
+      
   </header>
 </template>
 
@@ -71,10 +74,6 @@ header.dark{
     background-color: $lightGrayDark;
   }
 
-}
-
-.hidden-navbar{
-  opacity: 0;
 }
 
 [class*="cases-"]{
@@ -176,15 +175,22 @@ header{
   position: absolute;
   width: 100%;
   height: 5rem;
-  display: flex;
   font-size: 0.9em;
   z-index: 101;
   color: var(--white);
-  opacity: 1;
-  transition: opacity .3s ease-in !important;
 
-  @media (max-width: $screen-sm) {
-    display: none;
+  .navbar{
+    opacity: 1;
+    transition: opacity .3s ease-in !important;
+    display: flex;
+    height: 100%;
+    @media (max-width: $screen-sm) {
+        display: none;
+    }
+  }
+
+  .hidden-navbar{
+    opacity: 0;
   }
 
 .logo-wrapper{

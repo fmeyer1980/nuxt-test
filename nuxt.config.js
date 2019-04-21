@@ -46,6 +46,11 @@ export default {
   ['nuxt-sass-resources-loader', '@/assets/glo.scss'],
 ],
 
+server: {
+  port: 8000, // default: 3000
+  host: '0.0.0.0', // default: localhost
+},
+
 
   /*
   ** Build configuration
