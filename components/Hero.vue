@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" :class="page">
       <div class="bg-image" :style="{backgroundImage: 'url(' + imagUrl + ')', opacity: opacity}"></div>
         <div class="container container--right">
             <h1>
@@ -18,6 +18,7 @@ const IMG_PATH = "/images/";
 export default {
   name: 'hero',
   props: {
+    page: String, 
     title: String,
     text: String,
     image: String,
@@ -99,13 +100,26 @@ export default {
 
 }
 
-.hero{
+.hero.home{
     height: 42rem;
+
+    .bg-image{
+        animation-delay: 3.2s;
+    }
+
+    .container{
+        transform: translateY(-5rem);
+    }
+}
+
+.hero{
+    height: 36rem;
     background-color: transparent;
     color: var(--white);
-    padding-top: 11.5rem;
+    padding-top: 0;
     position: relative;
-    padding-right: var(--container-padding);
+    //padding-right: var(--container-padding);
+    display: flex;
 
     .bg-image{
         width: 100%;
@@ -121,9 +135,10 @@ export default {
         animation-delay: 2s;
     }
 
-    > div{
+   .container{
         position: relative;
         z-index: 1;
+        align-self: center;
     }
 
     h1{

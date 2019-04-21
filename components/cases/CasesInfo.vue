@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 
 .case-info{
-    position: relative;
+    position: absolute;
     color: var(--white);
     background-color: var(--secondary-dark);
     display: flex;
@@ -47,8 +47,9 @@ export default {
     height: 6rem;
     align-items: center;
     animation: fadeInAni .3s ease-in;
-    animation-delay: 2s;
+    animation-delay: 1.7s;
     animation-fill-mode: backwards; 
+    /* margin-top: -3rem; */
 
     &__box{
       position: relative;

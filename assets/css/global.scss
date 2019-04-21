@@ -4,6 +4,7 @@
 @import "type";
 @import "keyframes";
 @import "pages";
+@import "spacing";
 
 $gutter: 2.8rem;
 
@@ -180,3 +181,20 @@ a{
   width: 110vw;
   height: 110vh;
 }
+
+.bg-white{
+  background-color: var(--white);
+}
+
+.bg-light{
+  background-color: var(--light-gray-light);
+}
+
+.text-light{
+  color: var(--white);
+}
+
+.text-dark{
+  color: var(--black-gray-dark);
+}
+

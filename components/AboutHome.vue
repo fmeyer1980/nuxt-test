@@ -2,7 +2,7 @@
   <div class="about">
     <div class="about-box">
         <div class="container container--left">
-        <div class="image-ani"></div>
+            <div class="image-ani"></div>
             <div class="image-wrapper">
                 <img class="image" src="~assets/images/about-home.jpg" alt="Flemming Meyer"/>
                 <a class="contact-btn" href="">Kontakt mig for at høre nærmere <span></span></a>
@@ -103,9 +103,9 @@ export default {
       width: 100%;
       display: inline-block;
 
-      @media (max-width: $screen-lg) {
+      /* @media (max-width: $screen-lg) {
         margin-top: -7rem;
-      }
+      } */
 
       > div{
         display: var(--gridd);

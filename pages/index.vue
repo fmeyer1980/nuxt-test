@@ -2,6 +2,7 @@
   <div class="layout">
     <div class="page-overlay"></div>
     <Hero 
+    page="home"
     title="Designer og webdudvikler" 
     text="Jeg designer og udvikler små og store hjemmesider hvor både design, CMS og performance understøtter jeres målsætning og brugernes adfærd optimalt" image="hero-home-bg.png"
     />
