@@ -12,9 +12,9 @@
           <span>Client</span>
           <p>Personal project</p>
       </div>
-      <a href="/" class="case-info__box button">
+      <a href="http://tof-tild.webflow.io" target="_blank" class="case-info__box button">
           <span>Website link</span>
-          <p>baumundpferdgarten.com</p>
+          <p>toftild.dk</p>
       </a>
 </div>
 </template>
@@ -43,7 +43,8 @@ export default {
     align-items: center;
     animation: fadeInAni .3s ease-in;
     animation-delay: 1.7s;
-    animation-fill-mode: backwards; 
+    animation-fill-mode: backwards;
+    width: calc(100% - var(--container-padding));
     /* margin-top: -3rem; */
 
     &__box{
@@ -87,6 +88,7 @@ export default {
       justify-content: center;
       color: var(--white);
       padding-left: 2rem;
+      flex-grow: 3;
     }
 }
 

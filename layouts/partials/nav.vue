@@ -14,8 +14,8 @@
         </ul>
       </nav>
       <div class="contact">
-        <li><a href="">E: mail@konform.com</a></li>
-        <li><a href="">T: 33 11 05 11</a></li>
+        <li><a href="">E: mail@websome.dk</a></li>
+        <li><a href="">T: 28 21 95 00</a></li>
       </div>
     </div>
       
