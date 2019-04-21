@@ -22,13 +22,8 @@
 <script>
 
 export default {
-  name: 'hero',
-  props: {
-    title: String,
-    text: String,
-    image: String,
-    opacity: String
-  },
+
+
 }
 
 </script>

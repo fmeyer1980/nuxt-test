@@ -29,10 +29,16 @@ export default {
     title: 'Test side'
   },
 
+  data: {
+    score: [0,80,320,280,98],
+    paperNames:["hapana1","hapana2","hapana3","tikiri","tikiri2"]
+  },
+
   transition: {
     name: 'page-fade',
     mode: 'out-in'
   },
+  
   components: {
    Hero,
    CasesInfo

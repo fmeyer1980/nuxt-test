@@ -113,7 +113,7 @@ export default {
 }
 
 .hero{
-    height: 36rem;
+    height: 40.1rem;
     background-color: transparent;
     color: var(--white);
     padding-top: 0;

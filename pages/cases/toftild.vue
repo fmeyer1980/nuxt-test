@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="page-overlay"></div>
-    <Hero title="Toftild" text="Jeg designer og udvikler små og store hjemmesider hvor både design, CMS og performance understøtter målsætningerne og brugernes adfærd." image="/_nuxt/assets/images/case-test-img.jpg" />
+    <Hero title="Toftild" text="Jeg designer og udvikler små og store hjemmesider hvor både design, CMS og performance understøtter målsætningerne og brugernes adfærd." image="case1.jpg" />
     <!-- <img src="@/assets/images/case-test-img.jpg" alt=""> -->
     <CasesInfo />
   </div>
