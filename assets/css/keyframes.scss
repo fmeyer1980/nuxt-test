@@ -83,3 +83,67 @@
   }
 
 }
+
+@keyframes heroBgAni {
+
+  0%{
+  opacity: 0;
+  }
+
+  100%{
+  opacity: 1;
+  }
+}
+
+
+@keyframes textFadeIn{
+
+  0%{
+      opacity: 0;
+  }
+
+  100%{
+      opacity: .7;
+  }
+}
+
+@keyframes heroHeadingAni{
+
+  0%, 40%{
+      color: transparent; 
+  }
+
+  50%, 100%{
+      color: inherit;
+  }
+}
+
+@keyframes heroHeadingAfterAni{
+
+  0%, 50%{
+      background-color: transparent; 
+  }
+
+  51%, 100%{
+      background-color: var(--primary);
+  }
+}
+
+@keyframes slideInFromLeft {
+
+  0% {
+      transform: translateX(101%);
+      animation-timing-function: cubic-bezier(1,0,1,1);
+      background-color: var(--secondary-dark);
+  }
+
+  30%, 55% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-101%);
+      background-color: var(--secondary-dark);
+  }
+
+}

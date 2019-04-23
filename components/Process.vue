@@ -3,17 +3,17 @@
         <div class="container container--right">
             <div class="step" data-aos="text-ani-up" data-aos-once="true">
                 <img src="../assets/images/process-step-2.png" alt=""/>
-                <h3 class="heading h6">1. User experience</h3>
+                <h3 class="heading h4">1. User experience</h3>
                 <p>Digital design and development is at the core of what we do. Web platforms, e-commerce shops, front-end development.</p>
             </div>
             <div class="step" data-aos="text-ani-up" data-aos-delay="200" data-aos-once="true">
                 <img src="../assets/images/process-step-2.png" alt=""/>
-                <h3 class="heading h6">2. Visual design</h3>
+                <h3 class="heading h4">2. Visual design</h3>
                 <p>Design and development core of what we do. Web platforms, front-end development, brand logos, creative direction.</p>
             </div>
             <div class="step" data-aos="text-ani-up" data-aos-delay="400" data-aos-once="true">
                 <img src="../assets/images/process-step-2.png" alt=""/>
-                <h3 class="heading h6">3. Webudvikling & cms</h3>
+                <h3 class="heading h4">3. Webudvikling & cms</h3>
                 <p>Is at the core of what we do. Web platforms, e-commerce shops, front-end development, brand logos.</p>
             </div>
         </div>
@@ -71,7 +71,6 @@ export default {
 
             p{
                 opacity: 0.7;
-                font-size: 0.9rem;
             }
         }
      }

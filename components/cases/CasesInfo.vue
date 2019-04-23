@@ -39,7 +39,7 @@ export default {
     padding-left: var(--container-padding);
     transform: translateY(-50%);
     z-index: 1;
-    height: 6rem;
+    height: 10rem;
     align-items: center;
     animation: fadeInAni .3s ease-in;
     animation-delay: 1.7s;
@@ -50,7 +50,7 @@ export default {
     &__box{
       position: relative;
       flex-grow: 1;
-      padding: 0 3rem;
+      padding: 0 5rem;
       &:first-child{
         padding-left: 0;
       }
@@ -71,12 +71,12 @@ export default {
 
       span{
         opacity: .4;
-        font-size: .75rem;
+        font-size: 1.3;
       }
 
       p{
         margin: 0;
-        font-size: .9rem;
+        font-size: 1.8;
       }
     }
 

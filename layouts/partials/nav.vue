@@ -174,8 +174,8 @@ header.dark{
 header{
   position: absolute;
   width: 100%;
-  height: 5rem;
-  font-size: 0.9em;
+  height: 9rem;
+  font-size: 1.6rem;
   z-index: 101;
   color: var(--white);
 
@@ -195,9 +195,9 @@ header{
 
 .logo-wrapper{
     background-color: #eee;
-    padding-left: 2.8rem;
-    padding-right: 2.8rem;
-    width: 18rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 30rem;
     display: flex;
     align-items: center;
 
@@ -224,13 +224,13 @@ header{
 
           &:after{
               content: "";
-              height: 40px;
+              height: 4rem;
               width: 1px;
               background-color: rgba($white, 0.05);
               position: absolute;
               top: 50%;
               right: 0;
-              margin-top: -20px;
+              transform: translateY(-50%);
           }
 
           &:last-child:after{
@@ -278,13 +278,13 @@ header{
       padding: 0 1.8em;
       &:after{
         content: "";
-        height: 40px;
+        height: 4rem;
         width: 1px;
         background-color: rgba($white, 0.05);
         position: absolute;
         top: 50%;
         right: 0;
-        margin-top: -20px;
+        transform: translateY(-50%);
       }
       &:last-child{
         padding-right: 0;
@@ -321,4 +321,3 @@ header{
 }
 
 </style>
-

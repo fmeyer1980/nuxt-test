@@ -83,11 +83,11 @@ export default {
     
 
 .about{
-   --gridd: grid;
-  --grid-template-columns: repeat(1, 1fr 28rem);
+  --gridd: grid;
+  --grid-template-columns: repeat(1, 1fr 50.4rem);
 
   @media (max-width: $screen-md) {
-    --grid-template-columns: repeat(1, 1fr 24rem);
+    --grid-template-columns: repeat(1, 1fr 44rem);
   }
 
   @media (max-width: $screen-sm) {
@@ -99,7 +99,7 @@ export default {
 
     &-box{
       position: relative;
-      margin-top: -15rem;
+      margin-top: -28rem;
       width: 100%;
       display: inline-block;
 
@@ -144,20 +144,21 @@ export default {
 
           .contact-btn{
               position: absolute;
-              bottom: -2rem;
+              transform: translateY(-50%);
               margin-left: var(--container-padding);
               background-color: lighten($primary, 5%);
               color: $white;
               display: flex;
               width: auto;
-              height: 4rem;
+              height: 7.5rem;
               align-items: center;
-              padding-left: 1.5em;
+              padding-left: 1.9em;
               transition: background-color 0.2s ease;
               opacity: 0;
               animation: opacityAni .4s cubic-bezier(1,0,1,1) forwards;
               animation-delay: 2.4s;
               z-index: 99;
+              font-size: 1.6rem;
 
               @media (max-width: $screen-sm) {
                   display: none;
@@ -167,14 +168,14 @@ export default {
               }
 
               span{
-                  width: 4rem;
+                  width: 8rem;
                   height: 100%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   margin-left: 1.5em;
                   background: url("../assets/images/arrow-light.svg") no-repeat center $primary;
-                  background-size: 0.5rem;
+                  background-size: .6em;
               }
           }
         }
@@ -212,19 +213,19 @@ export default {
 
           h1{
               margin-top: 10px;
-              font-size: 2em;
+              font-size: 3.6rem;
               font-weight: 600;
           }
           p{
               font-weight: 300;
-
+                font-size: 1.8rem;
           }
 
           &__bottom{
               grid-column: 2 / 3;
               grid-row: 3 / 4;
               background-color: lighten(#DF7744, 4%);
-              padding: 1rem ($gutter - 1rem);
+              padding: ($gutter - 3) ($gutter - 2rem);
               list-style: none;
               margin: 0;
               display: flex;
@@ -235,8 +236,8 @@ export default {
               position: relative;
 
               li{
-                  height: 3.5rem;
-                  padding: 0.7rem 1.3rem;
+                  height: 6rem;
+                  padding: 0 2.6rem;
                   position: relative;
                   border-bottom: solid 1px;
                   border-color: rgba($black, 0.08);
@@ -245,7 +246,7 @@ export default {
 
                   &:first-child{
                       img{
-                          height: 1rem;
+                          height: 1.6rem;
                       }
                   }
 
@@ -271,7 +272,7 @@ export default {
                   }
 
                   img{
-                      height: 1.2rem;
+                      height: 2.2rem;
                   }
               }
           }
@@ -287,9 +288,9 @@ export default {
           animation-delay: 2.7s;
 
           p{
-            font-size: 1.6rem;
+            font-size: 2.8rem;
             @media (max-width: $screen-lg) {
-              font-size: 1.4rem;
+              font-size: 2.3rem;
             }
             font-weight: 300;
             position: relative;

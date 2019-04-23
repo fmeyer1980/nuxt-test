@@ -2,8 +2,10 @@
     <div :class="['cases', colorTheme]">
         <div class="top" data-aos="text-ani-up" data-aos-anchor-placement="top-bottom" data-aos-once="true">
             <div class="container container--right">
-                <h2 class="heading h1">Cases</h2>
-                <p class="text large">Get a leg up on the competition, and learn the newest tools, techniques, and technologies popular in your field.</p>
+                <div class="width--680">
+                    <h2 class="heading h1">Cases</h2>
+                    <p class="text--large">Get a leg up on the competition, and learn the newest tools, techniques, and technologies popular in your field.</p>
+                </div>
             </div>
         </div>
         <div class="wrapper">
@@ -18,73 +20,73 @@
                     </div>
                     <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website & webshop</span>
-                        <h3 class="heading h4">Toftild</h3>
+                        <h3 class="heading h3">Toftild</h3>
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/test">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/beachtours">
                 
                     <div class="image-container" @click="selected = 2" :class="{active:selected == 2}">
                         <div class="img-wrapper">
                             <img class="image" src="@/assets/images/case2.jpg" alt=""/>
                         </div>
-                        <div class="overlay test-color"></div>   
+                        <div class="overlay beachtours"></div>   
                     </div>
                     <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website</span>
-                        <h3 class="heading h4">Beach tours</h3>
+                        <h3 class="heading h3">Beach tours</h3>
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/toftild">
+                <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/test">
                     <div class="image-container" @click="selected = 3" :class="{active:selected == 3}">
                         <div class="img-wrapper">
                             <img class="image" src="@/assets/images/case3.jpg" alt=""/>
                         </div>
-                        <div class="overlay leadscoreapp"></div>   
+                        <div class="overlay test-color"></div>   
                     </div>
                     <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Dashboard</span>
-                        <h3 class="heading h4">LeadscoreApp</h3>
+                        <h3 class="heading h3">LeadscoreApp</h3>
                     </div>
                 </nuxt-link>
 
                 <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/limfjords-camping">
                     <div class="image-container" @click="selected = 4" :class="{active:selected == 4}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case3.jpg" alt=""/>
+                            <img class="image" src="@/assets/images/case4.jpg" alt=""/>
                         </div>
                         <div class="overlay limfjords-camping"></div>   
                     </div>
                     <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website</span>
-                        <h3 class="heading h4">Limfjords camping</h3>
+                        <h3 class="heading h3">Limfjords camping</h3>
                     </div>
                 </nuxt-link>
 
                 <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 5" :class="{active:selected == 5}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case2.jpg" alt=""/>
+                            <img class="image" src="@/assets/images/case5.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>
                     <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website & webshop</span>
-                        <h3 class="heading h4">Sandbalance</h3>
+                        <h3 class="heading h3">Sandbalance</h3>
                     </div>
                 </nuxt-link>
 
                 <nuxt-link class="item" data-aos="case-animation" data-aos-once="true" to="/cases/toftild">
                     <div class="image-container" @click="selected = 6" :class="{active:selected == 6}">
                         <div class="img-wrapper">
-                            <img class="image" src="@/assets/images/case1.jpg" alt=""/>
+                            <img class="image" src="@/assets/images/case6.jpg" alt=""/>
                         </div>
                         <div class="overlay leadscoreapp"></div>   
                     </div>
                     <div class="content" data-aos="case-text-ani" data-aos-once="true">
                         <span class="sub-heading">Website</span>
-                        <h3 class="heading h4">Online ski</h3>
+                        <h3 class="heading h3">Online ski</h3>
                     </div>
                 </nuxt-link>
             </div>
@@ -139,7 +141,7 @@ export default {
 
 .cases.home{
     .top{
-        padding: ($gutter * 2.5) 0 ($gutter * 4.5);
+        padding: ($gutter * 2) 0 ($gutter * 4.5);
     }
 }
 
@@ -165,7 +167,7 @@ export default {
               position: absolute;
               left: 0;
               top: 0;
-              margin-top: 0.1em;
+              margin-top: .05em;
           }
       }
 
@@ -176,7 +178,7 @@ export default {
   }
 
   .wrapper{
-      margin-top: -10rem;
+      margin-top: -18rem;
 
       > div{
       display: grid;
@@ -222,7 +224,7 @@ export default {
               }
           }
         .image-container{
-            /* padding-top: calc(591.44 / 727.34 * 100%); */
+            
             display: grid;
 
             .img-wrapper{
@@ -231,10 +233,12 @@ export default {
                 height: 100%;
                 grid-row-start: 1;
                 grid-column-start: 1;
+                padding-top: calc(591.44 / 727.34 * 100%);
+                position: relative;
             }
 
             .image{
-                position: relative;
+                position: absolute;
                 z-index: 2;
                 object-fit: cover;
                 width: 100%;
@@ -243,6 +247,8 @@ export default {
                 transition: opacity 0.1s ease-out;
                 transform: scale3d(1.075,1.075,1);
                 transition: 0.2s ease-in-out;
+                top: 0;
+                left: 0;
     
             }
 
@@ -259,7 +265,7 @@ export default {
         }
 
         .content{
-            padding: 1.2rem 0 3.3rem;
+            padding: 2rem 0 6rem;
 
             .heading{
                 margin-top: 0.2em;
@@ -268,6 +274,7 @@ export default {
                 position: relative;
                 padding-left: 0.4em;
                 line-height: 1em;
+                font-size: 2.6rem;
                 &:after{
                     content: "";
                     height: 0.8em;
@@ -282,7 +289,9 @@ export default {
 
             .sub-heading{
                 opacity: 0.7;
-                font-size: 0.8rem;
+                font-size: 1.3rem;
+                margin-bottom: .5em;
+                display: block;
             }
         }
 

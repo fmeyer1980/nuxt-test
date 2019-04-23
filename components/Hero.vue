@@ -36,84 +36,20 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/css/breakpoints.scss';
 
-@keyframes heroBgAni {
-
-    0%{
-    opacity: 0;
-    }
-
-    100%{
-    opacity: 1;
-    }
-}
-
-
-@keyframes textFadeIn{
-
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: .7;
-    }
-}
-
-@keyframes heroHeadingAni{
-
-    0%, 40%{
-        color: transparent; 
-    }
-
-    50%, 100%{
-        color: inherit;
-    }
-}
-
-@keyframes heroHeadingAfterAni{
-
-    0%, 50%{
-        background-color: transparent; 
-    }
-
-    51%, 100%{
-        background-color: var(--primary);
-    }
-}
-
-@keyframes slideInFromLeft {
-
-    0% {
-        transform: translateX(101%);
-        animation-timing-function: cubic-bezier(1,0,1,1);
-        background-color: var(--secondary-dark);
-    }
-
-    30%, 55% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-101%);
-        background-color: var(--secondary-dark);
-    }
-
-}
-
 .hero.home{
-    height: 42rem;
+    height: 76rem;
 
     .bg-image{
         animation-delay: 3.2s;
     }
 
     .container{
-        transform: translateY(-5rem);
+        transform: translateY(-9rem);
     }
 }
 
 .hero{
-    height: 40.1rem;
+    height: 72.5rem;
     background-color: transparent;
     color: var(--white);
     padding-top: 0;
@@ -145,7 +81,7 @@ export default {
         margin-top: 0;
         margin-bottom: 0.1em;
         display: inline-block;
-        font-size: 3.9rem;
+        font-size: 7rem;
         line-height: 0;
 
         .heading{
@@ -187,7 +123,7 @@ export default {
     
     p{
         margin-top: 0;
-        font-size: 1.2em;
+        font-size: 2.2rem;
         font-weight: 300;
         max-width: 70%;
         opacity: 0;
